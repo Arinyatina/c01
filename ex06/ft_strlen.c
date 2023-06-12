@@ -1,12 +1,9 @@
 int	ft_strlen(char *str)
 {
-	int	nbr;
+	int	i;
 
-	nbr = 0;
-	while (*str > 0)
-	{
-		str++;
-		nbr++;
-	}
-	return (nbr);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }

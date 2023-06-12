@@ -2,12 +2,9 @@
 
 void	ft_putstr(char *str)
 {
-	char	temp;
-
-	while (*str > 0)
+	while (*str)
 	{
-		temp = *str;
-		write(1, &temp, 1);
+		write(1, str, 1);
 		str++;
 	}
 }
